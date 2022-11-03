@@ -6,7 +6,7 @@ from django.shortcuts import render
 
 # HOME
 def home(request):
-    return HttpResponse('HOME')
+    return render(request, 'recipes/home.html')
 
 
 # CONTATO
