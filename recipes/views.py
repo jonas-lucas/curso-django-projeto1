@@ -6,12 +6,14 @@ from django.shortcuts import render
 
 # HOME
 def home(request):
-    return render(request, 'recipes/home.html')
+    return render(request, 'recipes/home.html', context={
+        'name': 'Jonas Lima',
+    })
 
 
 # CONTATO
 def contato(request):
-    return HttpResponse('contato')
+    return render(request, 'recipes/contato.html')
 
 
 # SOBRE
